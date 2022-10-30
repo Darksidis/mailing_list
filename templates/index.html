@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mail List</title>
+
+    <style type="text/css">
+        div {
+            display: inline; /* Устанавливаем как встроенный элемент */
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="Mailing List">
+
+    <div class="table">
+
+        <table>
+            <thead><th>Mail</th><th>Name</th><th>First Day</th></thead>
+            {{range . }}
+            <tr>
+                <td>{{.Mail}}</td>
+                <td>{{.Name}}</td>
+                <td>{{.FirstDay}}</td>
+            </tr>
+            {{end}}
+        </table>
+
+    </div>
+
+    <div class="add user">
+
+        <form method="POST">
+            <h3>Add User</h3>
+
+            <label>Mail</label><br>
+            <input type="text" name="mail" /><br><br>
+
+            <label>Name</label><br>
+            <input type="text" name="name" /><br><br>
+
+            <label>First Day</label><br>
+            <input type="date-local" name="first day" /><br><br>
+
+            <input type="submit" value="Send" />
+        </form>
+
+     </div>
+
+</div>
+
+</body>
