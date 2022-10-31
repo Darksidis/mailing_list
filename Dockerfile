@@ -20,6 +20,6 @@ COPY mail_list.db ./
 COPY templates/ /app/templates/
 
 EXPOSE 8000
-RUN ls
+
 CMD [ "/app/main" ]
 
