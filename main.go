@@ -83,8 +83,8 @@ func sendingCongratulations(wg *sync.WaitGroup) {
 
 	var mailData DataSmtp
 
-	mailData.Username = GoDotEnvVariable("Username")
-	mailData.Password = GoDotEnvVariable("Password")
+	mailData.Username = GoDotEnvVariable("username")
+	mailData.Password = GoDotEnvVariable("password")
 	mailData.Host = GoDotEnvVariable("smtpHost")
 	mailData.Port, _ = strconv.Atoi(GoDotEnvVariable("smtpPort"))
 
