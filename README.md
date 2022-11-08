@@ -1,16 +1,17 @@
 # mailing_list
 
-### Как работает
+### How does it work
 --------
-- Веб-приложение, где ты можешь добавить данные человека, которого нужно поздавить
-- Сервис, который, собственно, рассылает поздравления по почте.
+- Web application where you can add the details of the person you want to congratulate
 
-### Как запустить
+- A service that, in fact, sends congratulations by mail.
+
+### How to start
 --------
-1. Укажите данные вашего smtp-сервера в *.env* файле. Получить их можно, например, здесь (https://yandex.ru/support/mail/mail-clients/others.html)
-2. Установите ```gcc``` компилятор, если на компьютере он отсутствует (*необходимо для работы драйвера sqlite3*)
-3. Введите 
+
+1. Specify your smtp server details in *.env* file. You can get them, for example, here (https://yandex.ru/support/mail/mail-clients/others.html)
+2. Install the ```gcc``` compiler if your computer does not have one (*required for the sqlite3 driver to work*)
+3. Enter
 ```go build -o main```
 --------
-
-*Так же программу можно запустить через Docker*
+*You can also run the program through Docker*
